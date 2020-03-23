@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {% block content %}
+
+<body>
+    <div class="mainpage_box">
+        <div style="transform: translateY(300px) translateY(-100%)">
+            <a href="https://fontmeme.com/old-english-fonts/"><img src="https://fontmeme.com/permalink/200223/7dda2786c6f566bf7a77c904226a35fa.png" alt="old-english-fonts" border="0"></a>
+            <form name="search" action="." method="post" class="my-2">
+                    <input type="text" name="searchbox" style="width:55%;">
+                    <input type="submit" value="Find">
+                <!--<button type="button" class="btn btn-primary" href="{{ url_for('searchResults') }}">Find</button> -->
+            </form>
+            <p class="text-uppercase my-3">Find, purchase, and review books at your finger tips.</p>
+        </div>
+    </div>
+</body>
+
+{% endblock %}

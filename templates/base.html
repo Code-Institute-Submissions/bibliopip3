@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- styling -->
+    <link href="https://fonts.googleapis.com/css?family=Anton|Dancing+Script|Luckiest+Guy&display=swap" rel="stylesheet">
+    <style>
+        .mainpage_box {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            text-align: center;
+            position: absolute;
+        }
+    </style>
+
+    <title>Biblio</title>
+    <link rel="shortcut icon" type="image/png" src="/home/ubuntu/environment/images/circle_cropped.png">
+</head>
+
+<body>
+
+    </nav>
+    <ul>
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('catalogue') }}">Catalogue</a></li>
+        <li><a href="{{ url_for('searchResults') }}">Search</a></li>
+    </ul>
+    </nav>
+    {% block content %} {% endblock %}
+</body>
+
+</html>
