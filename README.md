@@ -1,7 +1,7 @@
 # Milestone Project 3: Bibilio Book Search Engine
 
 
-This project was inspired through my learning of Spanish. If I found a word I didn't know I wrote it down along with the English translation. I wanted to be able to design a memory / quiz game to test if I remembered the words. I also wanted the ability to record and check my most recent scores.
+This website is a search engine for books, and hosts a collection of books with a summary of what the book is about, the author's name, publication date and link to purchase the book.
 
 
 ## UX
@@ -23,7 +23,7 @@ Minimal and straight to the point.
 
 ## Features
 
-The main feature of this web app is the ability to answer a series questions where upon conclusion the users score is added to a list and if this score is in the Top 10 then feature it in the high scores page. 
+User is able to search for books based on title, regardless if the string is a substring or a complete string, and search is not affected by the case of the letters. 
 
 
 ## Features Left to Implement
@@ -56,7 +56,6 @@ Using Bootstrap 4 to allow page to be responsive on different platforms/window s
 Google Inspect
 
 AWS Cloud9 IDE
-
 
 
 
