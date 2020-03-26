@@ -45,8 +45,8 @@ def getvalue():
     searchbox = request.form['searchbox']
     bookTitle=['Quiet','A Brief History of Time', 'The Secret Garden']
     if searchbox == bookTitle[0]:
-        return render_template('searchResults.html', userinput=searchbox, searchResult1=bookTitle[0], searchResult2="", searchResult3="")
-    return render_template('searchResults.html', userinput=searchbox)
+        return render_template('searchResults.html', userinput=searchbox, searchResult1=bookTitle[0], searchResult2="", searchResult3=bookTitle[2])
+    return render_template('searchResults.html', userinput=searchbox, )
 
 
 
