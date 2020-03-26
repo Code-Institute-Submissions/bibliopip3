@@ -42,12 +42,15 @@ def Garden_T3():
 #FORM USER INPUT
 @app.route('/', methods=['POST'])
 def getvalue():
-    searchbox = request.form['searchbox']
+    searchbox = request.form['searchbox'].lower()
     bookTitle=['Quiet','A Brief History of Time', 'The Secret Garden']
-    if searchbox == bookTitle[0]:
-        return render_template('searchResults.html', userinput=searchbox, searchResult1=bookTitle[0], searchResult2="", searchResult3="")
-    return render_template('searchResults.html', userinput=searchbox)
-
+    if searchbox in bookTitle[0].lower():
+        return render_template('searchResults.html', userinput=searchbox, searchResult1=bookTitle[0], searchResult2="", searchResult3="", sorry="", noResults="")
+    elif searchbox in bookTitle[1]:
+        return render_template('searchResults.html', userinput=searchbox, searchResult1="", searchResult2=bookTitle[1], searchResult3="", sorry="", noResults="")
+    elif searchbox in bookTitle[2]:  
+        return render_template('searchResults.html', userinput=searchbox, searchResult1="", searchResult2="", searchResult3=bookTitle[2], sorry="", noResults="")
+    return render_template('searchResults.html', userinput=searchbox, searchResult1="", searchResult2="", searchResult3="", sorry="Sorry, that book is not in our catalogue yet. Please ",  noResults="try another book." )
 
 
 #DEBUGGING
