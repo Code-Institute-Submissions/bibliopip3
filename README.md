@@ -62,11 +62,19 @@ AWS Cloud9 IDE
 
 ## Development 
 Scripts were written and tested in the AWS Cloud9 IDE, evolving from  static html files to platform-responsive and user interaction dependent html files, powered by Python, Flask with Jinja codes.
-Intermitently, the project was saved to [my Github repository](https://github.com/farahroslend/bibliopip3) for version tracking and control.
+Intermitently, the static version of the project was saved to [my Github repository](https://github.com/farahroslend/bibliopip3) for version tracking and control. The application version of the website is deployed to Heroku and is available here: (https://biblio-flask-mongo.herokuapp.com/)
 
-## Deployment
+## Heroku Deployment Steps
 
-
+1. Create new app in Heroku, with the IP=0.0.0.0 and PORT=8080
+2. *$ heroku login -i*
+2. *$ heroku apps*
+3. *$ git init*
+4. *$ git commit -m 'progress log here'*
+5. *$ heroku git: remote-a-biblio-flask-mongo*
+6. *$ git push heroku master*
+7. Create requirement.txt, Procfile files as instructions for Heroku to run app
+8. *$heroku ps:scale web=1*
 
 ## Content
 Took inspiration from the website layout from Google Books. 
